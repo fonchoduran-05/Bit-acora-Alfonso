@@ -16,7 +16,7 @@ library(jsonlite)   # para base64 y JSON
 # ---------------------------------------------------------------------
 # 1. Datos de la solicitud
 # ---------------------------------------------------------------------
-ruta <- ""
+ruta <- "clase-01-10/"
 clave  <- readLines(here::here(paste0(ruta, "clave_groq.txt")), warn = FALSE)[1]   # la clave NO se sube a GitHub
 foto   <- "ticket.jpeg"
 tipo   <- "image/jpeg"          # si la foto es .png, poner "image/png"
@@ -89,9 +89,9 @@ cat("Tokens de salida (la respuesta):", datos$usage$completion_tokens, "\n")
 # 6. Guardar la tabla y abrirla
 # ---------------------------------------------------------------------
 texto <- gsub("```csv|```", "", texto)       # por si la envuelve
-writeLines(trimws(texto), "ticket.csv")
+writeLines(trimws(texto), here::here(paste0(ruta, "ticket.csv")))
 
-tabla <- read.csv("ticket.csv")
+tabla <- read.csv(here::here(paste0(ruta, "ticket.csv")))
 print(tabla)
 cat("Suma de los ítems:", sum(tabla$monto, na.rm = TRUE), "\n")   # comparar con el TOTAL impreso
 

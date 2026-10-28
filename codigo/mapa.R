@@ -22,7 +22,7 @@ suppressPackageStartupMessages({
 })
 
 # --- Configuración -------------------------------------------------------------
-ARCHIVO_O3 <- "clases/clase7/o3_01_2024_04_2024.csv"
+ARCHIVO_O3 <- "data/o3_01_2024_04_2024.csv"
 COL_LAT    <- "latitud"
 COL_LON    <- "longitud"
 

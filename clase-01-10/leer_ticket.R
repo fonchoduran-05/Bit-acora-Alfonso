@@ -15,7 +15,7 @@ library(jsonlite)   # para base64 y JSON
 # ---------------------------------------------------------------------
 # 1. Datos de la solicitud
 # ---------------------------------------------------------------------
-ruta <- "clases/clase11/clase_ia/"
+ruta <- "clase-01-10/"
 clave  <- readLines(here::here(paste0(ruta, "clave_gemini.txt")), warn = FALSE)[1]   # la clave NO se sube a GitHub
 foto   <- "ticket.jpg"
 tipo   <- "image/jpeg"          # si la foto es .png, poner "image/png"

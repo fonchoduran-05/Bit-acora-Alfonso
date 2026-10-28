@@ -33,16 +33,18 @@ ozono <- read_csv(here::here("data/o3_01_2024_04_2024.csv"),
                   locale = locale(encoding = "latin1"))
 
 ## Material particulado menor de 2,5 micras, estaciones automáticas
-pm <- read_csv(here::here("data/pm_2_5_01_2024_04_2024.csv"),
-               locale = locale(encoding = "latin1"))
+# (El archivo de PM2.5 no esta en el repo y no se usa mas adelante)
+# pm <- read_csv(here::here("data/pm_2_5_01_2024_04_2024.csv"),
+#                locale = locale(encoding = "latin1"))
 
 ## Conteo vehicular en las principales avenidas de Montevideo
 # El sistema del Centro de Gestión de Movilidad (CGM) usa analíticas de video
 # para medir volúmenes vehiculares. Los detectores miden el total de vehículos
 # y su clasificación por largo, por sentido de circulación, y pueden
 # discriminarse por carril dentro de cada sentido.
-auto <- read_csv(here::here("clases/clase7/autoscope_04_2024_volumen.csv"),
-                 locale = locale(encoding = "latin1"))
+# (El archivo de conteo vehicular no esta en el repo y no se usa mas adelante)
+# auto <- read_csv(here::here("data/autoscope_04_2024_volumen.csv"),
+#                  locale = locale(encoding = "latin1"))
 
 
 # =============================================================================
@@ -304,7 +306,7 @@ ggplot(max_8h_dia, aes(x = dia, y = max_8h, color = estacion)) +
 # =============================================================================
 # 9. Mapa
 # =============================================================================
-source(here::here("clases/clase7/mapa.R"))
+source(here::here("codigo/mapa.R"))
 
 mapa
 

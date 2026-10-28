@@ -1,7 +1,7 @@
 # =============================================================================
 # Figuras de la primera parte del teórico "Las partes de un gráfico" (ggplot2)
 # Valores de ozono leídos del gráfico original (media mensual, ene–abr 2024).
-# Genera: partida.png, geometria.png, corregida.png en clases/clase9/imagenes
+# Genera: partida.png, geometria.png, corregida.png en imagenes/
 # =============================================================================
 library(tidyverse)
 library(patchwork)
