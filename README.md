@@ -7,7 +7,7 @@ Bitacora de la clase de Introduccion a la ciencia de datos para negocios (Intro 
 | Carpeta / archivo | Contenido |
 |---|---|
 | `codigo/` | Scripts de R de las clases (carga de datos, profiling, graficos, mapa, estadistica basica) |
-| `data/` | Datos usados en los scripts (residuos, rotulado de alimentos, ozono, transito y aire) |
+| `data/` | Lista de los datos que usan los scripts (los CSV no se suben, ver `data/README.md`) |
 | `imagenes/` | Figuras de la clase de graficos con ggplot2 |
 | `clase-01-10/` | Clase del 01/10: lectura de un ticket con IA (Gemini y Groq) |
 | `Clase 3 20.08.docx` | Apuntes de la clase 3 (20/08) |
