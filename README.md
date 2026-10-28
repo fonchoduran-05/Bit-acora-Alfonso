@@ -7,7 +7,7 @@ Bitacora de la clase de Introduccion a la ciencia de datos para negocios (Intro 
 | Carpeta / archivo | Contenido |
 |---|---|
 | `codigo/` | Scripts de R de las clases (carga de datos, profiling, graficos, mapa, estadistica basica) |
-| `data/` | Datos usados en los scripts (residuos, rotulado de alimentos, ozono) |
+| `data/` | Datos usados en los scripts (residuos, rotulado de alimentos, ozono, transito y aire) |
 | `imagenes/` | Figuras de la clase de graficos con ggplot2 |
 | `clase-01-10/` | Clase del 01/10: lectura de un ticket con IA (Gemini y Groq) |
 | `Clase 3 20.08.docx` | Apuntes de la clase 3 (20/08) |
@@ -37,4 +37,4 @@ Bitacora de la clase de Introduccion a la ciencia de datos para negocios (Intro 
 ## Notas
 
 - Los scripts de `clase-01-10/` necesitan una clave de API propia en `clase-01-10/clave_gemini.txt` o `clase-01-10/clave_groq.txt`. Las claves no se suben al repositorio (estan en `.gitignore`).
-- `codigo/clase12_ejercicios_transito_aire.R` usa `data/transito_aire_junio2024.csv`, que no esta incluido en el repositorio.
+- Los datos de PM2.5 y de conteo vehicular (autoscope) no estan en el repositorio; sus cargas quedaron comentadas en `codigo/carga_y_transformacion.R` porque no se usan.
